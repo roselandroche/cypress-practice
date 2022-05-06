@@ -1,1 +1,7 @@
-{}
+{
+  "reporter": "spec",
+  "reporterOptions": {
+    "mochaFile": "results/my-test-output.html",
+    "toConsole": true
+  }
+}
