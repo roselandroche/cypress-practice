@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: cypress-practice@v1
+        uses: cypress-practice@v1/action
         with:
           who-to-greet: 'Rose'
       # Use the output from the `hello` step
