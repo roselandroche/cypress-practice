@@ -4,15 +4,13 @@ on: [push]
 
 jobs:
   firefox:
-    runs-on: ubuntu-latest
-    container:
-      image: cypress/browsers:node12.18.3-chrome87-ff82
-      options: --user 1001
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v2
         with:
           browser: firefox
+          headless: true
   edge:
     runs-on: windows-latest
     steps:
