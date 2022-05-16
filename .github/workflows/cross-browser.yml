@@ -4,10 +4,10 @@ on: [push]
 
 jobs:
   chrome:
-    uses: GitHub/cypress-practice/.github/workflows/cypress-chrome.yml@main
+    uses: roselandroche/cypress-practice/.github/workflows/cypress-chrome.yml@main
   
   edge:
-    uses:  GitHub/cypress-practice/.github/workflows/cypress-edge.yml@main
+    uses:  roselandroche/cypress-practice/.github/workflows/cypress-edge.yml@main
   
   firefox:
-    uses:  GitHub/cypress-practice/.github/workflows/cypress-firefox.yml@main
+    uses:  roselandroche/cypress-practice/.github/workflows/cypress-firefox.yml@main
