@@ -1,0 +1,10 @@
+name: Cypress Tests - Firefox
+on: push
+jobs:
+  firefox:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: cypress-io/github-action@v2
+        with:
+          browser: firefox
