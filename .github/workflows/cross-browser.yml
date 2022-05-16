@@ -3,11 +3,11 @@ name: Cross Browser - Cypress Tests
 on: [push]
 
 jobs:
-  chrome:
+  test-chrome:
     uses: roselandroche/cypress-practice/.github/workflows/cypress-chrome.yml@main
   
-  edge:
-    uses:  roselandroche/cypress-practice/.github/workflows/cypress-edge.yml@main
-  
-  firefox:
+  test-firefox:
     uses:  roselandroche/cypress-practice/.github/workflows/cypress-firefox.yml@main
+  
+  test-edge:
+    uses:  roselandroche/cypress-practice/.github/workflows/cypress-edge.yml@main
