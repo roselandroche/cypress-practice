@@ -1,4 +1,4 @@
-name: Cypress Test - Chrome
+name: Cypress Tests - Chrome
 
 on: [push]
 
@@ -11,3 +11,4 @@ jobs:
         with:
           browser: chrome
           headless: true
+          quiet: true

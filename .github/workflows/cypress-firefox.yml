@@ -8,3 +8,5 @@ jobs:
       - uses: cypress-io/github-action@v2
         with:
           browser: firefox
+          headless: true
+          quiet: true
