@@ -11,13 +11,14 @@ jobs:
         with:
           browser: firefox
           headless: true
-  edge:
-    runs-on: windows-latest
+  canary:
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v2
         with:
-          browser: edge
+          browser: canary
+          headless: true
   chrome:
     runs-on: ubuntu-20.04
     steps:
@@ -26,3 +27,10 @@ jobs:
         with:
           browser: chrome
           headless: true
+  edge:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: cypress-io/github-action@v2
+        with:
+          browser: edge
