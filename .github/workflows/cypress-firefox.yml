@@ -8,6 +8,8 @@ jobs:
       options: --user 1001
     steps:
       - uses: actions/checkout@v2
+      - run: sudo apt-get update
+      - run: sudo apt-get install -y libgbm-dev
       - uses: cypress-io/github-action@v2
         with:
           browser: firefox
