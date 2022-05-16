@@ -1,16 +1,8 @@
-name: Cypress Tests using Cypress Docker Image
+name: Chrome & Edge - Cypress
 
 on: [push]
 
 jobs:
-  firefox:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-      - uses: cypress-io/github-action@v2
-        with:
-          browser: firefox
-          headless: true
   chrome:
     runs-on: ubuntu-20.04
     steps:
