@@ -5,22 +5,16 @@ on: [push]
 jobs:
   firefox:
     runs-on: ubuntu-20.04
+    container: cypress/browsers:node16.14.2-slim-chrome100-ff99-edge
     steps:
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v2
         with:
           browser: firefox
           headless: true
-  canary:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-      - uses: cypress-io/github-action@v2
-        with:
-          browser: chrome:canary
-          headless: true
   chrome:
     runs-on: ubuntu-20.04
+    container: cypress/browsers:node16.14.2-slim-chrome100-ff99-edge
     steps:
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v2
@@ -29,6 +23,7 @@ jobs:
           headless: true
   edge:
     runs-on: windows-latest
+    container: cypress/browsers:node16.14.2-slim-chrome100-ff99-edge
     steps:
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v2
