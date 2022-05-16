@@ -1,6 +1,6 @@
 name: Cypress Tests - Edge
 
-on: [push]
+on: workflow_call
 
 jobs:
   edge:
@@ -11,4 +11,3 @@ jobs:
         with:
           browser: edge
           headless: true
-          quiet: true

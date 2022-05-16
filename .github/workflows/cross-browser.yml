@@ -1,0 +1,13 @@
+name: Cross Browser - Cypress Tests
+
+on: [push]
+
+jobs:
+  chrome:
+    uses: roselandroche/cypress-practice/cypress-chrome.yml
+  
+  edge:
+    uses: roselandroche/cypress-practice/cypress-edge.yml
+  
+  firefox:
+    uses: roselandroche/cypress-practice/cypress-firefox.yml

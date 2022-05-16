@@ -1,5 +1,7 @@
 name: Cypress Tests - Firefox
-on: push
+
+on: workflow_call
+
 jobs:
   firefox:
     runs-on: ubuntu-latest
@@ -9,4 +11,3 @@ jobs:
         with:
           browser: firefox
           headless: true
-          quiet: true
