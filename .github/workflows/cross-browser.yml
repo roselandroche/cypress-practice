@@ -2,6 +2,11 @@ name: Cross Browser - Cypress Tests
 
 on: [push]
 
+concurrency:
+  # New commit on branch cancels running workflows of the same branch
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test-chrome:
     uses: roselandroche/cypress-practice/.github/workflows/cypress-chrome.yml@main
