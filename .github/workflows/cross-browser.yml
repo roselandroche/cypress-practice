@@ -2,7 +2,7 @@ name: Cross Browser - Cypress Tests
 
 on: [push]
 
-  # New commit on branch cancels running workflows of the same branch
+# New commit on branch cancels running workflows of the same branch
 concurrency: 
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
