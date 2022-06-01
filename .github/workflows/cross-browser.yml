@@ -1,7 +1,7 @@
 name: Cross Browser - Cypress Tests
 
 on: [push]
-
+# testing
   # New commit on branch cancels running workflows of the same branch
 concurrency: 
   group: ${{ github.workflow }}-${{ github.ref }}
