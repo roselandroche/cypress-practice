@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/roselandroche/cypress-practice#readme",
   "devDependencies": {
-    "cypress": "^9.6.0"
+    "cypress": "^15.11.0"
   }
 }
